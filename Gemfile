@@ -19,6 +19,7 @@ gem 'jeditable-rails'
 group :development do
   gem 'capistrano'
   gem 'thin'
+  gem 'guard-livereload'  
 end
 
 group :development, :test do  
@@ -27,4 +28,6 @@ group :development, :test do
   gem 'autotest-standalone'
   gem 'autotest-growl'
   gem 'mynyml-redgreen'
+  
+  gem 'rb-inotify'
 end
