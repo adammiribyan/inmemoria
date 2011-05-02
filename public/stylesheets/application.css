@@ -14,7 +14,7 @@ html {
   overflow-x: hidden; }
 
 html, body {
-  background-color: #F3F1EC; }
+  background-color: #fefcfe; }
 
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -209,7 +209,7 @@ h5 {
 .container {
   display: block;
   margin: 0 auto;
-  width: 980px; }
+  width: 960px; }
 
 #topbar {
   -webkit-box-shadow: 0 1px 3px #222;
@@ -227,6 +227,52 @@ h5 {
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  min-height: 35px; }
   #topbar .contatainer {
     position: relative; }
+  #topbar .header-logo {
+    margin-right: 2.9166em;
+    position: relative;
+    top: 4px;
+    float: left; }
+  #topbar #login_link {
+    display: inline;
+    position: relative;
+    margin: 6px 0 0 5em;
+    float: left;
+    width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: black 0px 1px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    padding: 2px 6px; }
+    #topbar #login_link a {
+      font-weight: bold;
+      font-size: 1.0833em; }
+      #topbar #login_link a:link, #topbar #login_link a:hover, #topbar #login_link a:visited {
+        color: #eee;
+        text-decoration: none; }
+  #topbar #global_search {
+    display: inline;
+    position: relative;
+    margin-top: 5px;
+    float: right; }
+    #topbar #global_search input[type="search"] {
+      padding: 4px 4px 4px 20px;
+      width: 260px;
+      background: white url("/images/icon_search.png") no-repeat scroll 6px 5px;
+      border: 1px solid black;
+      display: inline;
+      height: auto;
+      line-height: 1.5;
+      border-bottom-left-radius: 3px 3px;
+      border-bottom-right-radius: 3px 3px;
+      border-top-left-radius: 3px 3px;
+      border-top-right-radius: 3px 3px; }

@@ -15,7 +15,7 @@ html{
 }
 
 html, body {
-  background-color: #F3F1EC;
+  background-color: #fefcfe;
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -197,7 +197,7 @@ h5 {
 .container {
   display: block;
   margin: 0 auto;  
-  width: 980px;  
+  width: 960px;  
 }
 
 #topbar {
@@ -217,6 +217,66 @@ h5 {
   width: 100%;
   top: 0;
   left: 0;
+  min-height: 35px;
   
   .contatainer { position: relative; }
+  
+  .header-logo {
+    margin-right: 2.9166em;
+    position: relative;
+    top: 4px;
+    float: left;
+  }
+  
+  #login_link {
+    display: inline;
+    position: relative;
+    margin: 6px 0 0 5em;
+    float: left;  
+    width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: black 0px 1px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    padding: 2px 6px;
+    
+    a {      
+      font-weight: bold;
+      font-size: 1.0833em;
+      
+      &:link,
+      &:hover,
+      &:visited {
+        color: #eee;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  #global_search {
+    display: inline;
+    position: relative;
+    margin-top: 5px;
+    float: right;
+    
+    input[type="search"] {
+      padding: 4px 4px 4px 20px;
+      width: 260px;
+      background: white url("/images/icon_search.png") no-repeat scroll 6px 5px;
+      border: 1px solid black;
+      display: inline;
+      height: auto;
+      line-height: 1.5;
+      border-bottom-left-radius: 3px 3px;
+      border-bottom-right-radius: 3px 3px;
+      border-top-left-radius: 3px 3px;
+      border-top-right-radius: 3px 3px;
+    }
+  }
 }

@@ -1,5 +1,19 @@
 <% title "Страница мертвого" %>
 
 <div id="topbar">
-  <div class="container">fdsf</div>
+  <div class="container">
+    <%= link_to "" do %>
+      <%= image_tag "logo-white.png", :class => "header-logo" %>
+    <% end %>
+    
+    <div id="login_link">
+      <a href="">Войти</a>
+    </div>
+    
+    <div id="global_search">
+      <form action="/">
+        <input id="q" name="q" placeholder="Поиск" type="search" class="ac_input">
+      </form>
+    </div>
+  </div>
 </div>
