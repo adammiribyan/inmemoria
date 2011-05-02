@@ -60,6 +60,11 @@ GEM
       em-websocket (~> 0.2.0)
       guard (>= 0.2.2)
       json (~> 1.5.1)
+    guard-sass (0.0.6)
+      guard (>= 0.2.1)
+      haml (~> 3.0.0)
+    haml (3.0.25)
+    high_voltage (0.9.4)
     highline (1.6.1)
     i18n (0.5.0)
     jeditable-rails (0.1.1)
@@ -137,6 +142,8 @@ DEPENDENCIES
   carrierwave
   factory_girl_rails
   guard-livereload
+  guard-sass
+  high_voltage
   jeditable-rails
   jquery-rails (~> 0.2)
   mini_magick

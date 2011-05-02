@@ -16,10 +16,14 @@ gem 'jquery-rails', '~>0.2'
 gem 'rails3-jquery-autocomplete'
 gem 'jeditable-rails'
 
+gem 'high_voltage'
+
 group :development do
   gem 'capistrano'
   gem 'thin'
-  gem 'guard-livereload'  
+  gem 'guard-livereload'
+  gem 'guard-sass'
+  gem 'rb-inotify'
 end
 
 group :development, :test do  
@@ -27,7 +31,5 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'autotest-standalone'
   gem 'autotest-growl'
-  gem 'mynyml-redgreen'
-  
-  gem 'rb-inotify'
+  gem 'mynyml-redgreen' 
 end

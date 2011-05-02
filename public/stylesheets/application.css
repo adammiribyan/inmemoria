@@ -1,0 +1,232 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  overflow-x: hidden; }
+
+html, body {
+  background-color: #F3F1EC; }
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF. 
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before,
+q:after {
+  content: ''; }
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal; }
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%; }
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000; }
+
+body {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; }
+
+input[type="button"],
+input[type="submit"] {
+  padding: 2px;
+  margin-right: 2px; }
+
+p {
+  font-size: 1em;
+  /* 12px */
+  line-height: 1.5em;
+  /* 18px */
+  margin: 0 0 1.5em 0; }
+
+.class-for-28px {
+  font-size: 2.3333em;
+  /* 28px */
+  line-height: 1.2857em;
+  /* 36px */
+  margin-top: 0.6429em;
+  margin-bottom: 0em; }
+
+h1 {
+  font-size: 2.1667em;
+  /* 26px */
+  line-height: 1.3846em;
+  /* 36px */
+  margin-bottom: 0em; }
+
+h2 {
+  font-size: 2em;
+  /* 24px */
+  line-height: 1.5em;
+  /* 36px */
+  margin-top: 0.75em;
+  margin-bottom: 0em; }
+
+h3 {
+  font-size: 1.8333em;
+  /* 22px */
+  line-height: 1.6364em;
+  /* 36px */
+  margin-top: 0.8182em;
+  margin-bottom: 0em; }
+
+h4 {
+  font-size: 1.6667em;
+  /* 20px */
+  line-height: 1.8em;
+  /* 36px */
+  margin-top: 0.9em;
+  margin-bottom: 0em; }
+
+h5 {
+  font-size: 1.5em;
+  /* 18px */
+  line-height: 1em;
+  /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0em; }
+
+.class-for-16px {
+  font-size: 1.3333em;
+  /* 16px */
+  line-height: 1.125em;
+  /* 18px */
+  margin-top: 1.125em;
+  margin-bottom: 0em; }
+
+.class-for-14px {
+  font-size: 1.1667em;
+  /* 14px */
+  line-height: 1.2857em;
+  /* 18px */
+  margin-top: 1.2857em;
+  margin-bottom: 0em; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 980px; }
+
+#topbar {
+  -webkit-box-shadow: 0 1px 3px #222;
+  -moz-box-shadow: 0 1px 3px #222;
+  box-shadow: 0 1px 3px #222;
+  background: rgba(12, 12, 12, 0.925);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=$from,endColorstr=$to);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=rgba(15, 15, 15, 0.85), endColorstr=#0a0a0a)";
+  background: -webkit-gradient(linear, 0% 0, 0% 100%, from(rgba(15, 15, 15, 0.85)), to(#0a0a0a));
+  background: -moz-linear-gradient(top, rgba(15, 15, 15, 0.85) 0, #0a0a0a 100%);
+  z-index: 50;
+  padding: 0;
+  padding-top: 2px;
+  color: #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  #topbar .contatainer {
+    position: relative; }
