@@ -141,6 +141,18 @@ input[type="submit"] {
   margin-right: 2px;
 }
 
+a {  
+  &:link,
+  &:visited { 
+    color: #231f20;
+    text-decoration: underline;
+  }
+  
+  &:hover {
+    background-color: #FFF8D2;
+  }
+}
+
 p {
   font-size: 1em; /* 12px */
   line-height: 1.5em; /* 18px */
@@ -213,11 +225,12 @@ h5 {
   padding: 0;
   padding-top: 2px;
   color: #ccc;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   min-height: 35px;
+  margin-bottom: 1.666em;
   
   .contatainer { position: relative; }
   
@@ -231,7 +244,7 @@ h5 {
   #login_link {
     display: inline;
     position: relative;
-    margin: 6px 0 0 5em;
+    margin: 6px 0 0 83px;
     float: left;  
     width: auto;
     white-space: nowrap;
@@ -255,6 +268,7 @@ h5 {
       &:visited {
         color: #eee;
         text-decoration: none;
+        background: none;
       }
     }
   }
@@ -279,4 +293,101 @@ h5 {
       border-top-right-radius: 3px 3px;
     }
   }
+}
+
+#sidebar, #content {
+  float: left;
+}
+
+#sidebar {
+  width: 144px;
+  
+  .age {
+    font-size: 5.833em;
+    line-height: 0.9;
+    font-style: italic;
+    font-family: Georgia;
+    text-align: center;
+    margin-top: 15px;
+    
+    small {
+      font-size: 0.434em;
+      display: block;
+    }
+  }
+}
+
+#content {
+  width: 798px;
+  margin-left: 18px;  
+  
+  #epitaph {
+    background-color: #F3F1EC;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px #ccc;
+    -moz-box-shadow: 0 1px 3px #ccc;
+    box-shadow: 0 1px 3px #ccc;
+    text-overflow: ellipsis;
+    text-shadow: #efefef 0px 1px 0px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+    span.quote {
+      font-size: 3.666em;
+      font-weight: bold;
+      position: absolute;
+      top: 0.38em;
+      line-height: 0;
+      color: #444;
+    }
+    
+    span.author {
+      display: block;
+      text-align: right;
+      font-size: 1.0833em;
+      font-style: italic;
+    }
+    
+    p {
+      font-size: 1.1666em; 
+      padding-left: 30px;
+      line-height: 1.5;
+      margin-bottom: 0.833em;
+    }
+    
+    a {
+      color: black;
+      // todo: link href color.
+    }
+  }
+  
+  .liner {
+    display: block;
+    
+    #header {
+      position: relative;
+      display: block;
+      border-bottom: 3px solid black;
+      padding-bottom: 1em;
+      padding: 0 0.5em 1em 0.5em;
+      
+      a { font-size: 1.0833em; }
+      
+      .social {
+        display: inline-block;
+        position: absolute;        
+        right: 0.5em;
+        top: 8px;
+      }
+      
+      h1 {
+        font-weight: bold;
+        margin-bottom: 5px;        
+      }
+    }
+  }  
 }
