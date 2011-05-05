@@ -557,7 +557,7 @@ h5 {
     
     &.x-2 {
       width: 60%;
-      margin-right: 22px;
+      margin-right: 40px;
     }
     
     &.x-1 {
@@ -628,3 +628,39 @@ h5 {
     }
   }
 }
+
+#media_content {
+  .content-box {
+    position: relative;
+    display: block;
+    margin: 1.5em 0;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 0.75em;
+    
+    h3 {
+      font-size: 1.333em;      
+      text-shadow: white 0px 1px 0px;
+      border-bottom: 1px solid #444;
+      margin-bottom: 0.75em;
+      color: #C56342;
+    }
+    
+    ul.photos {
+      position: relative;
+      width: 100%;
+      
+      li {
+        display: inline-block;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+
+
+
+
+

@@ -474,7 +474,7 @@ h5 {
     zoom: 1; }
     .columns .column.x-2 {
       width: 60%;
-      margin-right: 22px; }
+      margin-right: 40px; }
     .columns .column.x-1 {
       width: 35%; }
 
@@ -522,3 +522,24 @@ h5 {
         font-size: 0.545em;
         font-weight: normal;
         color: #888; }
+
+#media_content .content-box {
+  position: relative;
+  display: block;
+  margin: 1.5em 0;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 0.75em; }
+  #media_content .content-box h3 {
+    font-size: 1.333em;
+    text-shadow: white 0px 1px 0px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 0.75em;
+    color: #C56342; }
+  #media_content .content-box ul.photos {
+    position: relative;
+    width: 100%; }
+    #media_content .content-box ul.photos li {
+      display: inline-block;
+      padding: 2px; }
