@@ -319,7 +319,31 @@ h5 {
 
 #content {
   width: 798px;
-  margin-left: 18px;  
+  margin-left: 18px;
+  
+  h2 {
+    color: #C56342;
+    text-shadow: white 0px 1px 0px;
+    margin: 0.5em 0 0.4em;
+    width: 100%;
+    
+    .locked {
+      background: #E0E0D8 url("/images/lock.png") 2px center no-repeat;
+      padding: 6px 5px 6px 22px;
+      font-size: 0.5em;   
+      line-height: 1.1;
+      display: inline-block;
+      color: #444;
+      margin-top: 5px;
+      float: right;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+  }
+  
+  p {
+    font-size: 1.0833em;
+  }
   
   #epitaph {
     background-color: #F3F1EC;
@@ -518,6 +542,9 @@ h5 {
   ul {
     position: relative;
     width: 100%;
+    color: #C56342;
+    text-shadow: white 0px 1px 0px;   
+    letter-spacing: 1px;
     
     li {
       display: inline-block;
