@@ -431,8 +431,10 @@ h5 {
       font-weight: bold;
       position: absolute;
       top: 0.38em;
-      line-height: 0;
+      line-height: 0.1;
       color: #444;
+      display: block;
+      min-height: 100%;
     }
     
     span.author {
@@ -562,12 +564,19 @@ h5 {
     
     &.x-2 {
       width: 60%;
-      margin-right: 40px;
+      margin-right: 25px;
     }
     
     &.x-1 {
       width: 35%;
     }
+  }
+  
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
   }
 }
 
@@ -646,6 +655,7 @@ h5 {
     
     h3 {
       font-size: 1.333em;      
+      font-weight: bold;
       text-shadow: white 0px 1px 0px;
       border-bottom: 1px solid #444;
       margin-bottom: 0.75em;

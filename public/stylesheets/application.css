@@ -382,8 +382,10 @@ h5 {
       font-weight: bold;
       position: absolute;
       top: 0.38em;
-      line-height: 0;
-      color: #444; }
+      line-height: 0.1;
+      color: #444;
+      display: block;
+      min-height: 100%; }
     #content #epitaph span.author {
       display: block;
       text-align: right;
@@ -478,9 +480,14 @@ h5 {
     zoom: 1; }
     .columns .column.x-2 {
       width: 60%;
-      margin-right: 40px; }
+      margin-right: 25px; }
     .columns .column.x-1 {
       width: 35%; }
+  .columns:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0; }
 
 #personal_info ul {
   position: relative;
@@ -537,6 +544,7 @@ h5 {
   padding-bottom: 0.75em; }
   #media_content .content-box h3 {
     font-size: 1.333em;
+    font-weight: bold;
     text-shadow: white 0px 1px 0px;
     border-bottom: 1px solid #444;
     margin-bottom: 0.75em;
