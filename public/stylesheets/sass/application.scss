@@ -390,8 +390,8 @@ h5 {
         
         .button {
           vertical-align: middle;
-          margin-left: 15px;
-          margin-bottom: 4px;
+          margin-left: 12px;
+          margin-bottom: 3px;
         }
       }
     }
@@ -453,6 +453,90 @@ h5 {
       white-space: nowrap;
       width: 100%;
       z-index: 1;
+    }
+  }
+}
+
+// Columns
+
+.columns {
+  position: relative;
+  width: 100%;
+  zoom: 1;
+  margin: 1em 0;
+  
+  .column {
+    float: left;
+    position: relative;
+    zoom: 1;
+    
+    &.x-2 {
+      width: 60%;
+      margin-right: 22px;
+    }
+    
+    &.x-1 {
+      width: 35%;
+    }
+  }
+}
+
+#personal_info {
+  ul {
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 1em;
+    
+    li {
+      display: block;
+      list-style: none;
+      font-size: 1.0833em;
+      line-height: 1.7;
+      padding: 0 0.5em;
+      
+      .label {
+        width: 120px;        
+        color: #888;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#tree {
+  position: relative;
+  display: block;
+  text-align: center;
+  
+  h3 {
+    text-transform: lowercase;
+    font-size: 1.1666em;
+    color: #888; 
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    position: relative;
+    width: 100%;
+    
+    li {
+      display: inline-block;
+      list-style: none;
+      width: 30%;
+      font-size: 1.833em;
+      font-weight: bold;
+      line-height: 1.1;
+      
+      &:first-child {
+        border-right: 1px solid #444;
+      }
+      
+      span {
+        display: block;
+        font-size: 0.545em;
+        font-weight: normal;
+        color: #888;
+      }
     }
   }
 }
