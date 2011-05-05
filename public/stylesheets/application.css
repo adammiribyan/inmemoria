@@ -315,7 +315,7 @@ h5 {
     -moz-box-shadow: 0 1px 3px #ccc;
     box-shadow: 0 1px 3px #ccc;
     text-overflow: ellipsis;
-    text-shadow: #efefef 0px 1px 0px;
+    text-shadow: #fff 0px 1px 0px;
     overflow: hidden;
     margin-bottom: 20px; }
     #content #epitaph span.quote {
@@ -355,3 +355,55 @@ h5 {
       #content .liner #header h1 {
         font-weight: bold;
         margin-bottom: 5px; }
+        #content .liner #header h1 .button {
+          vertical-align: middle;
+          margin-left: 15px;
+          margin-bottom: 4px; }
+
+.button {
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  display: inline-block;
+  height: 23px;
+  left: 0px;
+  line-height: 23px;
+  margin: 0px;
+  outline: none;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  vertical-align: top;
+  width: auto;
+  z-index: 1;
+  zoom: 1; }
+  .button a {
+    text-decoration: none; }
+  .button .bg {
+    display: block;
+    float: left;
+    height: 23px;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 1; }
+    .button .bg .l, .button .bg .r {
+      background: url("http://assets0.lookatme.ru/4107114524/images/new/sprite-buttons.png") no-repeat 0px 0px;
+      height: 23px;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 50%; }
+    .button .bg .r {
+      background-position: 100% 0px;
+      left: 50%; }
+    .button .bg .text {
+      color: #333;
+      display: block;
+      font: normal normal bold 9px/9px Helvetica, Arial, sans-serif;
+      position: relative;
+      text-transform: uppercase;
+      top: 8px;
+      white-space: nowrap;
+      width: 100%;
+      z-index: 1; }
