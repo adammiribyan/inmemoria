@@ -212,6 +212,11 @@ h5 {
   width: 960px;  
 }
 
+#layout {
+  position: relative;
+  top: 4.666em;
+}
+
 #topbar {
   -webkit-box-shadow: 0 1px 3px #222;
   -moz-box-shadow: 0 1px 3px #222;
@@ -225,7 +230,7 @@ h5 {
   padding: 0;
   padding-top: 2px;
   color: #ccc;
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
