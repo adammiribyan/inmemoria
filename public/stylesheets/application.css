@@ -304,6 +304,43 @@ h5 {
 #content {
   width: 798px;
   margin-left: 18px; }
+  #content #testament {
+    position: relative;
+    border-bottom: 1px solid #efefef; }
+  #content #memories {
+    margin-bottom: 15em; }
+    #content #memories ul {
+      position: relative; }
+      #content #memories ul li {
+        list-style: none;
+        line-height: 1.5;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 5px 0; }
+        #content #memories ul li:last-child {
+          border-bottom: none; }
+        #content #memories ul li.memory {
+          background-color: #F3F1EC;
+          padding: 0.4em 0.5em; }
+          #content #memories ul li.memory .author {
+            float: right; }
+          #content #memories ul li.memory .author,
+          #content #memories ul li.memory .date {
+            display: inline-block; }
+        #content #memories ul li p {
+          margin: 0.5em 0 0.7em;
+          font-size: 1.1666em;
+          text-shadow: white 0px 1px 0px; }
+        #content #memories ul li > a {
+          font-size: 1.1666em;
+          border-bottom: 1px dashed #444;
+          text-decoration: none; }
+        #content #memories ul li .author {
+          display: inline-block;
+          float: right; }
+        #content #memories ul li .date {
+          display: block;
+          font-style: italic;
+          color: #666; }
   #content h2 {
     color: #C56342;
     text-shadow: white 0px 1px 0px;
