@@ -303,7 +303,8 @@ h5 {
     margin-top: 15px; }
     #sidebar .age small {
       font-size: 0.434em;
-      display: block; }
+      display: block;
+      margin-top: 0.3em; }
 
 #content {
   width: 798px;
@@ -332,7 +333,7 @@ h5 {
             display: inline-block; }
         #content #memories ul li p {
           margin: 0.5em 0 0.7em;
-          font-size: 1.1666em;
+          font-size: 1.0833em;
           text-shadow: white 0px 1px 0px; }
         #content #memories ul li > a {
           font-size: 1.1666em;
